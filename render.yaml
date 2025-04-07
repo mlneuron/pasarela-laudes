@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: pasarela-laudes
+    env: php
+    buildCommand: "composer install"
+    startCommand: "php -S 0.0.0.0:10000 -t ."
+    plan: free
+    region: oregon
+    branch: main
+    autoDeploy: false
